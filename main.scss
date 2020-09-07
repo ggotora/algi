@@ -72,7 +72,7 @@ body {
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: rgba(228, 228, 228, 0.788);
+      background-color: rgba(199, 198, 198, 0.603);
       position: absolute;
 
     }
@@ -80,7 +80,7 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      align-items: center;
+      padding-left: 5rem;
       height: 75%;
       .card {
         position: absolute;
@@ -94,8 +94,10 @@ body {
           font-size: 5vw;        
           font-weight: 900;
           background-image: url("./img/photo-1489648022186-8f49310909a0.jpeg");
-          background-size: cover;
-          background-position: top top;
+          // background-image: url("https://images.unsplash.com/photo-1566577994649-b4b9e93e3b02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=962&q=80");
+          background-size: contain;
+          background-position:  center 500px;
+          background-repeat: repeat;
           background-clip: text;
             -webkit-background-clip: text;
           color: transparent;
@@ -117,7 +119,7 @@ body {
 
 .cta {
 
-  
+  background-color: rgba(255, 255, 255, 0.808);
   .cards {    
     display: flex;
     justify-content: center;
