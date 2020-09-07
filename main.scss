@@ -1,0 +1,137 @@
+//
+$body-bg: #000;
+$body-color: #111;
+
+$theme-colors: (
+  "primary": #ec5242,
+  "grey": #d3d3d3,
+  "dark" : #272a31,
+  "transparent": rgb(145, 17, 17),
+);
+
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, 
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+body {
+  background-image: url("./img/truck-2407264_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Lato', sans-serif;
+}
+
+
+.navbar-toggler:focus {
+  outline: 1px solid white;
+}
+
+.quick-contact {
+  position: absolute;
+  right: 20px;
+  top: 100px;
+  z-index: 100;
+}
+.quick-contact i {
+  padding: 0 .3rem;
+}
+
+.quick-contact a {
+  margin: 0 .6rem;
+  color: rgba(0, 0, 0, 0.548);
+  font-weight: 600;
+  
+}
+
+.welcome {
+ 
+
+  .bg-image {
+    // background-image: url("./img/truck-2407264_960_720.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+    &::after {
+      content: "";
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(228, 228, 228, 0.788);
+      position: absolute;
+
+    }
+    .welcome-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      height: 75%;
+      .card {
+        position: absolute;
+        right: 20px;
+        bottom: 0;
+        z-index: 5;
+      }
+      .inner-title {
+        z-index: 5;
+        h1 {
+          font-size: 5vw;        
+          font-weight: 900;
+          background-image: url("./img/photo-1489648022186-8f49310909a0.jpeg");
+          background-size: cover;
+          background-position: top top;
+          background-clip: text;
+            -webkit-background-clip: text;
+          color: transparent;
+        
+        }
+        p {
+          padding-left: 1rem;
+          font-size: 1.2rem;
+        }
+
+      } 
+     
+      
+    }
+   
+   
+  }
+}
+
+.cta {
+
+  
+  .cards {    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.about {
+  height: 30vh;
+ 
+
+}
+
+.contact {
+  height: 100vh;
+  background-color: black;
+}
